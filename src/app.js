@@ -353,7 +353,7 @@ class App extends React.Component {
          document.querySelector(".input-container").classList.toggle("active")
          document.querySelector(".output-container").classList.toggle("active")
       } catch(e){
-        alert("Quíen eres? Lu no te conoce...Mira si has introducido bien el nombre(la primera letra en Mayúsicula, no te olvides de la tilde, y el curso es un numero, e.g. el primer curso es 1.)")
+        alert("Quién eres? Lu no te conoce...Mira si has introducido bien el nombre(la primera letra en Mayúsicula, no te olvides de la tilde, y el curso es un número, e.g. el primer curso es 1, el segundo es 2.)")
       }
 
      
