@@ -344,12 +344,20 @@ class App extends React.Component {
         this.setState({curso:event.target.value})
      }
      handleFind=()=>{
-      this.setState({msg:students.find(stu => stu.nombre === this.state.nombre && stu.curso == this.state.curso).msg,
-        nombreCN:students.find(stu => stu.nombre === this.state.nombre && stu.curso == this.state.curso).nombreCN
-    })
-     document.querySelector(".input-container").classList.toggle("active")
-     document.querySelector(".output-container").classList.toggle("active")
-     console.log(students.length)
+                 
+         
+      try{
+        this.setState({msg:students.find(stu => stu.nombre === this.state.nombre && stu.curso == this.state.curso).msg,
+            nombreCN:students.find(stu => stu.nombre === this.state.nombre && stu.curso == this.state.curso).nombreCN
+        })
+         document.querySelector(".input-container").classList.toggle("active")
+         document.querySelector(".output-container").classList.toggle("active")
+      } catch(e){
+        alert("Quíen eres? Lu no te conoce...Mira si has introducido bien el nombre(la primera letra en Mayúsicula, no te olvides de la tilde, y el curso es un numero, e.g. el primer curso es 1.)")
+      }
+
+     
+    
      }
    
     
