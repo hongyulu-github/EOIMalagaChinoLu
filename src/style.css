@@ -341,8 +341,17 @@ footer{
   @media screen and (max-width:650px){
     
     
+   html, body{
+      height: 115%;
+      background: linear-gradient(var(--color-pink),var(--color-orange));
+      background-repeat: no-repeat;
+      background-size: contain;
+     
+  
+  }
+    
     .display{
-      height: 200%;
+      height: 100%;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -350,14 +359,26 @@ footer{
 
     }
     .input-container,
-    .input-container.active,
-    .output-container,
-    .output-container.active
+    .output-container
     {
       margin: 10px 0;
+      height: 70%;
     }
+
+    .input-container.active,
+    .output-container.active{
+      height: 70%;
+
+    }
+    .container .box {
+      width: 15.875em;
+      height: 30.875em;
+     
+    }
+
    
     footer{
+      font-size: 15px;
       height: 15%;
       bottom: 0px;
       position: relative;
