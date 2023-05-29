@@ -337,7 +337,7 @@ class App extends React.Component {
         msg:""
      } 
      handleInputNombre =()=>{
-        this.setState({nombre:event.target.value})
+        this.setState({nombre:event.target.value.trim()})
        
      }
      handleInputCurso =()=>{
