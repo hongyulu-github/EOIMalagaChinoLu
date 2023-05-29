@@ -1,5 +1,11 @@
 const students =[
         {
+        "nombre":"Marco",
+        "nombreCN":"小马",
+        "curso":1,
+        "msg":"Qué buscas aquí? Dónde mi comiiiiiiida? Ahhhhhhhhhhhhh!" 
+        },
+        {
         "nombre":"Africa",
         "nombreCN":"阿芙莉卡",
         "curso":3,
